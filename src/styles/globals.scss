@@ -30,6 +30,7 @@ body {
   overflow-x: hidden;
   color: var(--light);
   background: var(--bg-gradient);
+  min-height: 200vh;
 }
 
 body,
@@ -106,3 +107,5 @@ img {
     row-gap: 10rem;
   }
 }
+
+@import "components/components";

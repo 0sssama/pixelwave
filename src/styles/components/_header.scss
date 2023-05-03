@@ -1,0 +1,26 @@
+.Header {
+  position: fixed;
+  z-index: 1337;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: var(--header-min-height);
+  height: max-content;
+  max-height: var(--header-max-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
+  &.with-bg {
+    border-bottom-color: var(--gray-800);
+    background-color: var(--black-opacity-9);
+    @supports (backdrop-filter: blur(6px)) {
+      background-color: var(--black-opacity-7);
+      backdrop-filter: saturate(180%) blur(8px);
+    }
+  }
+  &-Logo {
+    max-width: 150px;
+  }
+}

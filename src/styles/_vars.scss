@@ -6,7 +6,7 @@
   --purple: #4329d8;
   --yellow: #dfa268;
   --pinkish-purple: #8402ac;
-  --dark: #1c1c1c;
+  --dark: rgb(28, 28, 28);
   --light: #fefefe;
 
   // gradients
@@ -78,15 +78,15 @@
   --black-opacity-9: rgba(0, 0, 0, 0.9);
 
   // dark color (gray-900) - opacity levels
-  --dark-opacity-1: rgba(17, 24, 39, 0.1);
-  --dark-opacity-2: rgba(17, 24, 39, 0.2);
-  --dark-opacity-3: rgba(17, 24, 39, 0.3);
-  --dark-opacity-4: rgba(17, 24, 39, 0.4);
-  --dark-opacity-5: rgba(17, 24, 39, 0.5);
-  --dark-opacity-6: rgba(17, 24, 39, 0.6);
-  --dark-opacity-7: rgba(17, 24, 39, 0.7);
-  --dark-opacity-8: rgba(17, 24, 39, 0.8);
-  --dark-opacity-9: rgba(17, 24, 39, 0.9);
+  --dark-opacity-1: rgba(28, 28, 28, 0.1);
+  --dark-opacity-2: rgba(28, 28, 28, 0.2);
+  --dark-opacity-3: rgba(28, 28, 28, 0.3);
+  --dark-opacity-4: rgba(28, 28, 28, 0.4);
+  --dark-opacity-5: rgba(28, 28, 28, 0.5);
+  --dark-opacity-6: rgba(28, 28, 28, 0.6);
+  --dark-opacity-7: rgba(28, 28, 28, 0.7);
+  --dark-opacity-8: rgba(28, 28, 28, 0.8);
+  --dark-opacity-9: rgba(28, 28, 28, 0.9);
 
   // danger and caution colors
   --success: rgb(53, 226, 87);
@@ -103,11 +103,11 @@
   --caution: rgb(248, 223, 82);
 
   /*			GLOBAL VALUES		*/
-  --header-height: 90px;
-  --header-height-with-bg: 75px;
+  --header-min-height: 65px;
+  --header-max-height: 90px;
   @include tablet {
-    --header-height: 100px;
-    --header-height-with-bg: 75px;
+    --header-min-height: 72px;
+    --header-max-height: 100px;
   }
   --border-radius: 8px;
 
