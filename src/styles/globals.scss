@@ -15,6 +15,10 @@
   font-family: -apple-system, BlinkMacSystemFont, ObjectSans, Plus Jakarta Sans,
     Poppins, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
+  transition-property: all;
+  transition-duration: 600ms;
+  transition-delay: 0ms;
+  transition-timing-function: var(--transition);
 }
 
 html {
@@ -63,15 +67,28 @@ img {
 
 .main-text {
   color: var(--light);
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 
   strong {
-    font-family: Migra, ObjectSans, Plus Jakarta Sans, Poppins, Segoe UI, Roboto,
-      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-      sans-serif;
+    font-family: Migra;
+    text-transform: lowercase;
     letter-spacing: -2px;
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    &.cap {
+      text-transform: capitalize;
+    }
+  }
+
+  @include tablet {
+    font-size: 50px;
+  }
+  @include desktop {
+    font-size: 80px;
   }
 }
 
