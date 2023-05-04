@@ -1,5 +1,6 @@
 import React, { PropsWithoutRef, ComponentProps } from "react";
 import classNames from "classnames";
+import Router from "next/router";
 
 type ButtonProps = ComponentProps<"button">;
 
@@ -25,7 +26,13 @@ function Button({
         variant
       )}
       onClick={(e) => {
-        if (href) return window.open(href);
+        if (href) {
+          // check if link starts with slash or hashtag
+          const internalLink = href.match(/^(\/|#)/);
+          if (internalLink) return Router.push(href);
+
+          return window.open(href, "_blank", "noopener noreferrer");
+        }
 
         props.onClick && props.onClick(e);
       }}

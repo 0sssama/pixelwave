@@ -8,9 +8,10 @@ button.button {
   border-radius: var(--border-radius);
   font-size: 0.825rem;
   transition: all 600ms var(--transition);
+  white-space: nowrap;
 
   b {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   @include tablet {
@@ -63,6 +64,7 @@ button.button {
       background-color: transparent;
       background-position: 90% 0;
       box-shadow: 0 5px 25px var(--main-opacity-2);
+      opacity: 80%;
     }
   }
 

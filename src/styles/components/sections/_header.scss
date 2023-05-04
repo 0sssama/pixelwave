@@ -27,7 +27,7 @@
       a {
         position: relative;
         font-size: 0.875rem;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         transition: all 600ms var(--transition);
 
@@ -37,7 +37,7 @@
           top: calc(100% + 4px);
           left: 0;
           width: 0;
-          height: 3px;
+          height: 4px;
           background: var(--primary-gradient);
           border-radius: 50px;
           transition: all 600ms var(--transition);

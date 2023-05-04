@@ -93,17 +93,9 @@ img {
 
 .Home {
   width: 100%;
+  max-width: 1280px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 4rem;
-  @include tablet {
-    row-gap: 7rem;
-  }
-  @include desktop {
-    row-gap: 10rem;
-  }
+  margin: var(--header-max-height) auto 2rem;
 }
 
 @import "components/components";
