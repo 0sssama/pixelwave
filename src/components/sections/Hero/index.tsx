@@ -47,7 +47,7 @@ function Hero() {
         }}
       >
         <Button variant="primary" href="https://google.com">
-          Let's talk!
+          Let&apos;s talk!
         </Button>
         <Button href="#portfolio">Our work</Button>
       </motion.div>
