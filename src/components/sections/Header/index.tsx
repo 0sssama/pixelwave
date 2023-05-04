@@ -7,6 +7,7 @@ import classNames from "classnames";
 import Button from "@/components/atoms/Button";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Navigation from "./Navigation";
+import { globalTransition } from "@/utils/globalTransition";
 
 function Header() {
   const { scroll } = useRecoilValue(windowState);
@@ -25,9 +26,8 @@ function Header() {
         y: 0,
       }}
       transition={{
-        duration: 0.8,
-        ease: [0.59, 0, 0.06, 1],
-        delay: 0,
+        ...globalTransition,
+        delay: 1.5,
       }}
     >
       <div className="Header-wrapper wrapper flex items-center justify-between padding-x h-full">
