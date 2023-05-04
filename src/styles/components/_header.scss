@@ -12,6 +12,48 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid transparent;
+
+  .Navigation {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+
+    @include desktop {
+      display: flex;
+    }
+
+    li {
+      a {
+        position: relative;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 600ms var(--transition);
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: calc(100% + 4px);
+          left: 0;
+          width: 0;
+          height: 3px;
+          background: var(--primary-gradient);
+          border-radius: 50px;
+          transition: all 600ms var(--transition);
+          box-shadow: 0 5px 10px var(--main);
+        }
+      }
+      &.active a,
+      &:hover a {
+        opacity: 80%;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   &.with-bg {
     border-bottom-color: var(--gray-800);
     background-color: var(--black-opacity-9);

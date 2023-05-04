@@ -12,7 +12,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, ObjectSans, Plus Jakarta Sans,
+  font-family: -apple-system, BlinkMacSystemFont, Plus Jakarta Sans, ObjectSans,
     Poppins, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
 }
@@ -65,7 +65,7 @@ img {
 .main-text {
   color: var(--light);
   font-size: 36px;
-  font-weight: bolder;
+  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
 
@@ -76,6 +76,8 @@ img {
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 5px 10px var(--main-opacity-2);
+
     &.cap {
       text-transform: capitalize;
     }

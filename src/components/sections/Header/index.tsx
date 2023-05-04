@@ -6,6 +6,7 @@ import Link from "next/link";
 import classNames from "classnames";
 import Button from "@/components/atoms/Button";
 import { BiRightArrowAlt } from "react-icons/bi";
+import Navigation from "./Navigation";
 
 function Header() {
   const { scroll } = useRecoilValue(windowState);
@@ -35,6 +36,7 @@ function Header() {
             <img src="/assets/logo-horizontal.svg" alt="Pixelwave Logo" />
           </div>
         </Link>
+        <Navigation />
         <Button variant="header" icon={<BiRightArrowAlt />}>
           BOOK A CALL
         </Button>

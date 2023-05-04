@@ -14,6 +14,24 @@ export default function Home() {
       <h1 className="main-text mt-10">
         Welcome to <strong className="cap">Pixelwave</strong>!
       </h1>
+      <div
+        className="min-h-screen w-full min-w-screen flex items-center justify-center border-2 border-white border-solid"
+        id="workflow"
+      >
+        workflow
+      </div>
+      <div
+        className="min-h-screen w-full min-w-screen flex items-center justify-center border-2 border-white border-solid"
+        id="portfolio"
+      >
+        portfolio
+      </div>
+      <div
+        className="min-h-screen w-full min-w-screen flex items-center justify-center border-2 border-white border-solid"
+        id="faq"
+      >
+        faq
+      </div>
     </main>
   );
 }
