@@ -12,6 +12,9 @@ function Hero() {
       className="Hero Section min-h-[500px] flex flex-col justify-center"
       ref={ref}
     >
+      {/* <div className="bg-illustration bg-illustration-hero">
+        <img src="/assets/illustrations/circles.svg" alt="Circles" />
+      </div> */}
       <motion.h1
         variants={globalVariant}
         initial="hidden"

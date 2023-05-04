@@ -6,7 +6,7 @@ button.button {
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: var(--border-radius);
-  font-size: 0.825rem;
+  font-size: 0.875rem;
   transition: all 600ms var(--transition);
   white-space: nowrap;
 
@@ -15,7 +15,7 @@ button.button {
   }
 
   @include tablet {
-    font-size: 0.875rem;
+    font-size: 0.975rem;
     padding: 0.625rem 1.75rem;
   }
 
@@ -71,7 +71,9 @@ button.button {
   &.header {
     border-radius: 500px;
     padding: 0.5rem;
+    font-size: 0.825rem;
     @include tablet {
+      font-size: 0.875rem;
       padding: 0.625rem 1rem;
     }
   }
