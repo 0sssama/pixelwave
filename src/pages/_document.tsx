@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Pixelwave - The no-code agency you needed</title>
         <meta
           name="description"
           content="Pixelwave is an agency specialized in crafting beautiful user interfaces and seamless user experiences for complex web applications using no-code technologies."

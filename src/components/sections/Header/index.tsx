@@ -4,6 +4,8 @@ import { useRecoilValue } from "recoil";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import classNames from "classnames";
+import Button from "@/components/atoms/Button";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 function Header() {
   const { scroll } = useRecoilValue(windowState);
@@ -15,7 +17,7 @@ function Header() {
       })}
       initial={{
         opacity: 0,
-        y: -50,
+        y: -100,
       }}
       animate={{
         opacity: 1,
@@ -24,7 +26,7 @@ function Header() {
       transition={{
         duration: 0.8,
         ease: [0.59, 0, 0.06, 1],
-        delay: 0.2,
+        delay: 0,
       }}
     >
       <div className="Header-wrapper wrapper flex items-center justify-between padding-x h-full">
@@ -33,7 +35,9 @@ function Header() {
             <img src="/assets/logo-horizontal.svg" alt="Pixelwave Logo" />
           </div>
         </Link>
-        <button>Book a call</button>
+        <Button variant="header" icon={<BiRightArrowAlt />}>
+          BOOK A CALL
+        </Button>
       </div>
     </motion.div>
   );

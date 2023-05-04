@@ -5,11 +5,18 @@
 
 @font-face {
   font-family: ObjectSans;
+  font-weight: 400;
   src: url("ObjectSans-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: ObjectSans;
-  font-weight: bold;
+  font-weight: 600;
+  src: url("ObjectSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ObjectSans;
+  font-weight: 800;
   src: url("ObjectSans-Heavy.otf") format("opentype");
 }
