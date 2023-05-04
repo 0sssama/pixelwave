@@ -62,35 +62,6 @@ img {
   pointer-events: none;
 }
 
-.main-text {
-  color: var(--light);
-  font-size: 36px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-
-  strong {
-    font-family: Migra;
-    text-transform: lowercase;
-    letter-spacing: -2px;
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 5px 10px var(--main-opacity-2);
-
-    &.cap {
-      text-transform: capitalize;
-    }
-  }
-
-  @include tablet {
-    font-size: 50px;
-  }
-  @include desktop {
-    font-size: 80px;
-  }
-}
-
 .Home {
   width: 100%;
   max-width: 1280px;

@@ -1,13 +1,14 @@
-.Hero {
+.Hero.Section {
   @include tablet {
     align-items: center;
   }
 
   h1 {
+    font-family: ObjectSans;
     font-size: 28px;
     font-weight: 800;
     text-align: left;
-
+    line-height: 1.25;
     strong {
       background: var(--primary-gradient);
       box-shadow: 0 5px 10px var(--main-opacity-2);

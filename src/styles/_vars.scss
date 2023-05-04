@@ -19,6 +19,8 @@
     linear-gradient(-30deg, var(--yellow), var(--main), var(--pinkish-purple));
   --bg-gradient: -webkit-linear-gradient(120deg, #030003, #130036, #030003),
     linear-gradient(120deg, #030003, #130036, #030003);
+  --dark-gradient: -webkit-linear-gradient(-20deg, #160040, #06000f),
+    linear-gradient(-20deg, #160040, #06000f);
 
   // main color - opacity levels
   --main-opacity-05: rgba(212, 3, 97, 0.05);
