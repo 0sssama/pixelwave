@@ -29,7 +29,7 @@ function ProjectItem({
       }}
     >
       <div className="ProjectItem__image">
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
       <div className="ProjectItem__content">
         <h1>{title}</h1>
