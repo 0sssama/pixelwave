@@ -18,6 +18,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-max-height) + 2rem);
   font-size: 100%;
 }
 

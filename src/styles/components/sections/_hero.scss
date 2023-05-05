@@ -1,4 +1,5 @@
 .Hero.Section {
+  align-items: flex-start;
   @include tablet {
     align-items: center;
   }

@@ -33,7 +33,7 @@ function WorkflowItem({
       }}
     >
       <div className="WorkflowItem__image">
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
       <div className="WorkflowItem__content">
         <div className="WorkflowItem__duration">

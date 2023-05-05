@@ -1,0 +1,55 @@
+.Portfolio.Section {
+  .ProjectItems-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem 2.5rem;
+    width: 100%;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .ProjectItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    &__image {
+      width: 100%;
+      height: 240px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 5px 45px var(--white-opacity-3);
+      overflow: hidden;
+
+      @include tablet {
+        height: 280px;
+      }
+      @include desktop {
+        height: 300px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      h1 {
+        font-family: Migra;
+        font-size: 28px;
+        width: 100%;
+      }
+
+      article {
+        font-size: 15px;
+        opacity: 80%;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ function Workflow() {
   const { ref, control } = useInViewControl({ threshold: 0.1 });
 
   return (
-    <div className="Workflow Section" ref={ref}>
+    <div className="Workflow Section" ref={ref} id="workflow">
       <SectionHeader
         control={control}
         subtitle="Our projects"
