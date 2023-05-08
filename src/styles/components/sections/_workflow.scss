@@ -35,9 +35,22 @@
 
     &__image {
       border-radius: calc(var(--border-radius) - 4px);
-      aspect-ratio: 1;
       background-image: var(--dark-gradient);
       border: 1px solid var(--gray-900);
+      aspect-ratio: 1;
+      @supports not (aspect-ratio: 1 / 1) {
+        &::before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+      }
 
       @include notTablet {
         width: 100%;
