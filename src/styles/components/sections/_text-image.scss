@@ -1,0 +1,78 @@
+.TextImage.Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .text-container,
+  .image-container {
+    width: 100%;
+
+    @include tablet {
+      max-width: 50%;
+    }
+  }
+
+  .text-container {
+    h1 {
+      font-weight: 800;
+      line-height: 1.25;
+      font-size: 28px;
+      margin-bottom: 1.25rem;
+      @include tablet {
+        font-size: 40px;
+      }
+      @include desktop {
+        font-size: 50px;
+      }
+      &,
+      * {
+        font-family: Migra;
+      }
+      strong {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          background-image: url(/assets/illustrations/line.svg);
+          width: 110%;
+          height: 0.5rem;
+          left: 50%;
+          top: 100%;
+          transform: translateX(-50%);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include desktop {
+            width: 115%;
+            height: 0.75rem;
+          }
+        }
+      }
+    }
+
+    article {
+      font-size: 14px;
+      margin-top: 1rem;
+      font-weight: 300;
+      opacity: 80%;
+      @include tablet {
+        font-size: 16px;
+      }
+      @include desktop {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .image-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+}

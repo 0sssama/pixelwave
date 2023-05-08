@@ -4,7 +4,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import { motion } from "framer-motion";
 
 function TextSection() {
-  const { ref, control } = useInViewControl({ threshold: 0.4 });
+  const { ref, control } = useInViewControl({ threshold: 0.2 });
 
   return (
     <div className="Text Section" ref={ref}>

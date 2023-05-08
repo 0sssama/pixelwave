@@ -1,5 +1,10 @@
-import { Hero, Portfolio, Workflow } from "@/components/sections";
-import TextSection from "@/components/sections/TextSection";
+import {
+  Hero,
+  Portfolio,
+  Workflow,
+  TextSection,
+  TextImage,
+} from "@/components/sections";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,6 +17,7 @@ export default function Home() {
       <Workflow />
       <Portfolio />
       <TextSection />
+      <TextImage />
     </main>
   );
 }
