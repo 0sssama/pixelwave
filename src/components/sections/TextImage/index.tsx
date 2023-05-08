@@ -48,7 +48,11 @@ function TextImage() {
           delay: 0.8,
         }}
       >
-        <img src="/assets/Mockup.jpg" alt="Pixelwave in Laptop" />
+        <img
+          src="/assets/Mockup.jpg"
+          alt="Pixelwave in Laptop"
+          loading="lazy"
+        />
       </motion.div>
     </div>
   );

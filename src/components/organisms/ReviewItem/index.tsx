@@ -31,7 +31,7 @@ function ReviewItem({
         delay: 0.4 + (id + 1) * 0.6,
       }}
     >
-      <img src={image} alt={`${name} - ${title}`} />
+      <img src={image} alt={`${name} - ${title}`} loading="lazy" />
       <h3>{name}</h3>
       <p>{title}</p>
       <article>{text}</article>
