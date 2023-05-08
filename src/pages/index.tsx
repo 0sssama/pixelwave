@@ -4,6 +4,7 @@ import {
   Workflow,
   TextSection,
   TextImage,
+  Reviews,
 } from "@/components/sections";
 import Head from "next/head";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Portfolio />
       <TextSection />
       <TextImage />
+      <Reviews />
     </main>
   );
 }
