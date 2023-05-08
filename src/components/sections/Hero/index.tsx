@@ -8,10 +8,7 @@ function Hero() {
   const { ref, control } = useInViewControl();
 
   return (
-    <div
-      className="Hero Section min-h-[500px] flex flex-col justify-center"
-      ref={ref}
-    >
+    <div className="Hero Section flex flex-col justify-center" ref={ref}>
       {/* <div className="bg-illustration bg-illustration-hero">
         <img src="/assets/illustrations/circles.svg" alt="Circles" />
       </div> */}

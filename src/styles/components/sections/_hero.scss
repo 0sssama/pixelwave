@@ -1,7 +1,10 @@
 .Hero.Section {
   align-items: flex-start;
+  min-height: 450px;
+
   @include tablet {
     align-items: center;
+    min-height: 650px;
   }
 
   h1 {
