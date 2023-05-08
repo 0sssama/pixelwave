@@ -1,4 +1,5 @@
 import { Hero, Portfolio, Workflow } from "@/components/sections";
+import TextSection from "@/components/sections/TextSection";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Workflow />
       <Portfolio />
+      <TextSection />
     </main>
   );
 }
