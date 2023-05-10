@@ -1,10 +1,1 @@
-<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M29.0362 69.308C35.0706 53.2564 26.9676 35.3905 10.916 29.356L11.0362 29.0361C27.0879 35.0706 44.9538 26.9675 50.9882 10.9159L51.3285 11.0438C45.294 27.0954 53.3971 44.9613 69.4487 50.9958L69.3284 51.3157C53.2768 45.2813 35.4109 53.3843 29.3764 69.4359L29.0362 69.308Z" fill="url(#paint0_linear_330_386)"/>
-<defs>
-<linearGradient id="paint0_linear_330_386" x1="36.5719" y1="-2.33911" x2="48.321" y2="93.2522" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D84C61"/>
-<stop offset="0.46875" stop-color="#D4145E"/>
-<stop offset="1" stop-color="#BC0972"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" fill="none" xmlns:v="https://vecta.io/nano"><path d="M29.036 69.308c6.034-16.052-2.069-33.918-18.12-39.952l.12-.32c16.052 6.034 33.918-2.069 39.952-18.12l.34.128c-6.035 16.052 2.069 33.918 18.12 39.952l-.12.32c-16.052-6.034-33.918 2.069-39.952 18.12l-.34-.128z" fill="url(#A)"/><defs><linearGradient id="A" x1="36.572" y1="-2.339" x2="48.321" y2="93.252" gradientUnits="userSpaceOnUse"><stop stop-color="#d84c61"/><stop offset=".469" stop-color="#d4145e"/><stop offset="1" stop-color="#bc0972"/></linearGradient></defs></svg>
