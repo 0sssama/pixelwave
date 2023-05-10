@@ -7,6 +7,7 @@ import {
   Reviews,
   Technologies,
   AppFeatures,
+  FAQ,
 } from "@/components/sections";
 import Head from "next/head";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Reviews />
       <Technologies />
       <AppFeatures />
+      <FAQ />
     </main>
   );
 }
