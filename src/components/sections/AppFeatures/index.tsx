@@ -1,4 +1,5 @@
 import { AppFeature, SectionHeader } from "@/components/organisms";
+import { AppFeatureProps } from "@/components/organisms/AppFeature";
 import { useInViewControl } from "@/utils/useInViewControl";
 import React from "react";
 
@@ -14,14 +15,14 @@ function AppFeatures() {
       />
       <div className="AppFeatures-wrapper">
         {appFeatures.map((feature, index) => (
-          <AppFeature key={index} {...feature} control={control} />
+          <AppFeature key={index} {...feature} control={control} id={index} />
         ))}
       </div>
     </div>
   );
 }
 
-const appFeatures = [
+const appFeatures: Omit<AppFeatureProps, "id" | "control">[] = [
   {
     icon: "/assets/features/payment.svg",
     title: "Payment Processing",
