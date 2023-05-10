@@ -8,3 +8,4 @@ export { default as Reviews } from "./Reviews";
 export { default as Technologies } from "./Technologies";
 export { default as AppFeatures } from "./AppFeatures";
 export { default as FAQ } from "./FAQ";
+export { default as Footer } from "./Footer";

@@ -8,6 +8,7 @@ import {
   Technologies,
   AppFeatures,
   FAQ,
+  Footer,
 } from "@/components/sections";
 import Head from "next/head";
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Technologies />
       <AppFeatures />
       <FAQ />
+      <Footer />
     </main>
   );
 }
