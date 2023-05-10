@@ -1,2 +1,59 @@
 .Footer.Section {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  p {
+    color: var(--white-opacity-8);
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.25;
+    font-size: 28px;
+    font-family: ObjectSans;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 80px;
+    }
+    strong {
+      font-family: Migra;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 5px 15px var(--main-opacity-4);
+    }
+  }
+
+  .CTA {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--white-opacity-9);
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .bottom {
+    p {
+      font-size: 12px;
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+  }
 }
