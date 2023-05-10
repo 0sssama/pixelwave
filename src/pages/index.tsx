@@ -6,6 +6,7 @@ import {
   TextImage,
   Reviews,
   Technologies,
+  AppFeatures,
 } from "@/components/sections";
 import Head from "next/head";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <TextImage />
       <Reviews />
       <Technologies />
+      <AppFeatures />
     </main>
   );
 }

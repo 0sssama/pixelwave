@@ -6,3 +6,4 @@ export { default as TextSection } from "./TextSection";
 export { default as TextImage } from "./TextImage";
 export { default as Reviews } from "./Reviews";
 export { default as Technologies } from "./Technologies";
+export { default as AppFeatures } from "./AppFeatures";
