@@ -1,0 +1,50 @@
+.Technologies.Section {
+  .intro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 14px;
+      margin-top: 1rem;
+      font-weight: 300;
+      text-align: center;
+      opacity: 80%;
+      @include tablet {
+        font-size: 16px;
+        max-width: 80%;
+      }
+      @include desktop {
+        max-width: 60%;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tech-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border: 1px solid var(--gray-800);
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    img {
+      min-height: 0.5rem;
+      max-height: 1.5rem;
+
+      @include tablet {
+        min-height: 0.75rem;
+        max-height: 2rem;
+      }
+      @include desktop {
+        min-height: 1rem;
+        max-height: 2.5rem;
+      }
+    }
+  }
+}
