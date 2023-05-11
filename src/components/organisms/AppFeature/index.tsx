@@ -2,24 +2,24 @@ import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 import { AnimationControls, motion } from "framer-motion";
 
-export interface ProjectItemProps {
+export interface AppFeatureProps {
   id: number;
-  image: string;
+  icon: string;
   title: string;
   description: string;
   control: AnimationControls;
 }
 
-function ProjectItem({
+function AppFeature({
   id,
-  image,
+  icon,
   title,
   description,
   control,
-}: ProjectItemProps) {
+}: AppFeatureProps) {
   return (
     <motion.div
-      className="ProjectItem"
+      className="AppFeature"
       variants={globalVariant}
       initial="hidden"
       animate={control}
@@ -28,15 +28,11 @@ function ProjectItem({
         delay: 0.4 + (id + 1) * 0.4,
       }}
     >
-      <div className="ProjectItem__image">
-        <img src={image} alt={title} loading="lazy" />
-      </div>
-      <div className="ProjectItem__content">
-        <h1>{title}</h1>
-        <article>{description}</article>
-      </div>
+      <img src={icon} alt={title} loading="lazy" />
+      <h2>{title}</h2>
+      <article>{description}</article>
     </motion.div>
   );
 }
 
-export default ProjectItem;
+export default AppFeature;

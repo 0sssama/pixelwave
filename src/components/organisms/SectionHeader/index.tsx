@@ -1,18 +1,21 @@
 import { motion, AnimationControls } from "framer-motion";
 import { globalVariant } from "@/utils/globalVariant";
 import { globalTransition } from "@/utils/globalTransition";
+import classNames from "classnames";
 
 const SectionHeader = ({
   title,
   subtitle,
   control,
+  className,
 }: {
   title: string;
   subtitle: string;
   control: AnimationControls;
+  className?: string;
 }) => {
   return (
-    <div className="Section__header">
+    <div className={classNames("Section__header", className)}>
       <motion.h3
         variants={globalVariant}
         initial="hidden"

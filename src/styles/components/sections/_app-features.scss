@@ -1,0 +1,52 @@
+.AppFeatures.Section {
+  .AppFeatures-wrapper {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 1rem;
+
+    @include tablet {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 300px);
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 300px);
+    }
+    .AppFeature {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 1.75rem;
+      border-radius: var(--border-radius);
+      background: var(--bg-gradient);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      img {
+        max-height: 2rem;
+      }
+
+      h2,
+      article {
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 1rem;
+
+        @include tablet {
+          font-size: 1.25rem;
+        }
+      }
+      article {
+        opacity: 80%;
+        font-size: 12px;
+        @include tablet {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

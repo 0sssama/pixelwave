@@ -1,4 +1,15 @@
-import { Hero, Portfolio, Workflow } from "@/components/sections";
+import {
+  Hero,
+  Portfolio,
+  Workflow,
+  TextSection,
+  TextImage,
+  Reviews,
+  Technologies,
+  AppFeatures,
+  FAQ,
+  Footer,
+} from "@/components/sections";
 import Head from "next/head";
 
 export default function Home() {
@@ -8,8 +19,16 @@ export default function Home() {
         <title>Pixelwave - The no-code agency you needed</title>
       </Head>
       <Hero />
+      <TextImage />
       <Workflow />
       <Portfolio />
+      <TextSection />
+      <TextImage />
+      <Reviews />
+      <Technologies />
+      <AppFeatures />
+      <FAQ />
+      <Footer />
     </main>
   );
 }
