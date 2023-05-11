@@ -9,7 +9,7 @@ function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <div className="FAQ Section" ref={ref}>
+    <div className="FAQ Section" ref={ref} id="faq">
       <SectionHeader
         control={control}
         title="QUESTIONS"
