@@ -38,19 +38,6 @@
       background-image: var(--dark-gradient);
       border: 1px solid var(--gray-900);
       aspect-ratio: 1;
-      @supports not (aspect-ratio: 1 / 1) {
-        &::before {
-          content: "";
-          display: block;
-          padding-top: 100%;
-        }
-
-        &::after {
-          content: "";
-          display: block;
-          clear: both;
-        }
-      }
 
       @include notTablet {
         width: 100%;
@@ -60,12 +47,20 @@
       @include tablet {
         height: 150px;
         width: 150px;
+        max-width: 150px;
+        min-width: 150px;
+        max-height: 150px;
+        min-height: 150px;
         padding: 24px;
       }
 
       @include desktop {
         height: 200px;
         width: 200px;
+        max-width: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        min-height: 200px;
         padding: 40px;
       }
 

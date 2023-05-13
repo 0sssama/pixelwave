@@ -1,6 +1,7 @@
 import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 import { AnimationControls, motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export interface WorkflowItemProps {
   id: number;
@@ -21,6 +22,21 @@ function WorkflowItem({
   duration,
   control,
 }: WorkflowItemProps) {
+  const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const syncImageHeight = () => {
+      if (!imageRef || !imageRef.current) return;
+      if (window.innerWidth >= 600) return;
+
+      const width = imageRef.current.clientWidth;
+      imageRef.current.style.height = `${width}px`;
+    };
+
+    syncImageHeight();
+    window.addEventListener("resize", syncImageHeight);
+  }, [imageRef]);
+
   return (
     <motion.div
       className="WorkflowItem"
@@ -32,7 +48,7 @@ function WorkflowItem({
         delay: 0.4 + (id + 1) * 0.6,
       }}
     >
-      <div className="WorkflowItem__image">
+      <div className="WorkflowItem__image" ref={imageRef}>
         <img src={image} alt={title} loading="lazy" />
       </div>
       <div className="WorkflowItem__content">
