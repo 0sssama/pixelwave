@@ -3,6 +3,7 @@ import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 import { useInViewControl } from "@/utils/useInViewControl";
 import { motion } from "framer-motion";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 function Footer() {
   const { ref, control } = useInViewControl();
@@ -35,7 +36,11 @@ function Footer() {
           <br />
           Book a free 15 minutes discovery call.
         </p>
-        <Button variant="primary" href="#">
+        <Button
+          variant="primary"
+          icon={<BiRightArrowAlt />}
+          href="https://calendar.app.google/gp8qFyhxzKyUBjtB8"
+        >
           Let&apos;s talk!
         </Button>
       </motion.div>

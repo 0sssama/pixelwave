@@ -37,7 +37,11 @@ function Header() {
           </div>
         </Link>
         <Navigation />
-        <Button variant="header" icon={<BiRightArrowAlt />}>
+        <Button
+          variant="header"
+          icon={<BiRightArrowAlt />}
+          href="https://calendar.app.google/gp8qFyhxzKyUBjtB8"
+        >
           BOOK A CALL
         </Button>
       </div>
