@@ -4,6 +4,8 @@ import type { AppProps } from "next/app";
 import { RecoilRoot, useSetRecoilState } from "recoil";
 import { useEffect } from "react";
 import { Header } from "@/components/sections";
+import Head from "next/head";
+import Script from "next/script";
 
 // component that listens for screen width / height / scroll changes
 function WinStateListener() {
@@ -40,6 +42,26 @@ function WinStateListener() {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
+      <Head>
+        <Script
+          strategy="afterInteractive"
+          async={true}
+          src="https://www.googletagmanager.com/gtag/js?id=G-0FKV5PKN87"
+        />
+
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+		  
+			gtag('config', 'G-0FKV5PKN87');`,
+          }}
+        />
+      </Head>
       <WinStateListener />
       <Header />
       <Component {...pageProps} />
