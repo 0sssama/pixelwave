@@ -4,7 +4,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import React from "react";
 
 function Portfolio() {
-  const { ref, control } = useInViewControl({ threshold: 0.15 });
+  const { ref, control } = useInViewControl();
 
   return (
     <div className="Portfolio Section" ref={ref} id="portfolio">

@@ -5,7 +5,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import { motion } from "framer-motion";
 
 function Technologies() {
-  const { ref, control } = useInViewControl({ threshold: 0.3 });
+  const { ref, control } = useInViewControl();
 
   return (
     <div className="Technologies Section" ref={ref}>
@@ -22,7 +22,7 @@ function Technologies() {
         animate={control}
         transition={{
           ...globalTransition,
-          delay: 0.6,
+          delay: 0.4,
         }}
       >
         <p>
@@ -38,7 +38,7 @@ function Technologies() {
         animate={control}
         transition={{
           ...globalTransition,
-          delay: 0.8,
+          delay: 0.6,
         }}
       >
         {tech.map((item, index) => (

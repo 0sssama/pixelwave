@@ -4,7 +4,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import React from "react";
 
 function AppFeatures() {
-  const { ref, control } = useInViewControl({ threshold: 0.3 });
+  const { ref, control } = useInViewControl();
 
   return (
     <div className="AppFeatures Section" ref={ref}>

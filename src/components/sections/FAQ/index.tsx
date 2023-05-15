@@ -4,7 +4,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import React, { useState } from "react";
 
 function FAQ() {
-  const { ref, control } = useInViewControl({ threshold: 0.2 });
+  const { ref, control } = useInViewControl();
 
   const [open, setOpen] = useState<number | null>(null);
 

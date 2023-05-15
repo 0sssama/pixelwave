@@ -6,7 +6,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import React from "react";
 
 function Workflow() {
-  const { ref, control } = useInViewControl({ threshold: 0.075 });
+  const { ref, control } = useInViewControl();
 
   return (
     <div className="Workflow Section" ref={ref} id="workflow">

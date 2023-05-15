@@ -45,7 +45,7 @@ function WorkflowItem({
       animate={control}
       transition={{
         ...globalTransition,
-        delay: 0.4 + (id + 1) * 0.6,
+        delay: 0.2 + (id + 1) * 0.4,
       }}
     >
       <div className="WorkflowItem__image" ref={imageRef}>

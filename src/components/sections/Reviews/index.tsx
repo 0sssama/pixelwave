@@ -3,7 +3,7 @@ import { useInViewControl } from "@/utils/useInViewControl";
 import React from "react";
 
 function Reviews() {
-  const { ref, control } = useInViewControl({ threshold: 0.15 });
+  const { ref, control } = useInViewControl();
 
   return (
     <div className="Reviews Section" ref={ref}>

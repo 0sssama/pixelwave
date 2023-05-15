@@ -4,7 +4,7 @@ import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 
 function TextImage() {
-  const { ref, control } = useInViewControl({ threshold: 0.3 });
+  const { ref, control } = useInViewControl();
 
   return (
     <div className="TextImage Section" ref={ref}>
