@@ -19,11 +19,11 @@ export default function Home() {
         <title>Pixelwave - The no-code agency you needed</title>
       </Head>
       <Hero />
-      <TextImage />
+      <TextImage model={0} />
       <Workflow />
       <Portfolio />
       <TextSection />
-      <TextImage />
+      <TextImage model={1} />
       <Reviews />
       <Technologies />
       <AppFeatures />

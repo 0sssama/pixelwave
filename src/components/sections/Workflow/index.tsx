@@ -38,7 +38,7 @@ const items: Omit<WorkflowItemProps, "id" | "control">[] = [
     subtitle: "UI/UX Design Implementation...",
     description:
       "We will implement a pixel-perfect version of the designs to crafting the most modern user interface design that is fit for the target users of the application.",
-    duration: "1-2 HOURS",
+    duration: "3-4 DAYS",
     image: "/assets/workflow_icons/Design-icon.svg",
   },
   {
@@ -46,7 +46,7 @@ const items: Omit<WorkflowItemProps, "id" | "control">[] = [
     subtitle: "Bring it to life...",
     description:
       "We will craft a responsive web app. Everything will be built with scaling in mind too (we'll make sure this is not just a proof of concept that you'll need to throw away later",
-    duration: "1-2 HOURS",
+    duration: "7-15 DAYS",
     image: "/assets/workflow_icons/Bubble-Dev-icon.svg",
   },
   {
@@ -54,7 +54,7 @@ const items: Omit<WorkflowItemProps, "id" | "control">[] = [
     subtitle: "Try your product out!",
     description:
       "After Quality Assurance testing, your app is ready to go live! We also continue to work with you on future phases.",
-    duration: "1-2 HOURS",
+    duration: "7 DAYS",
     image: "/assets/workflow_icons/Product-Delivery-icon.svg",
   },
 ];
