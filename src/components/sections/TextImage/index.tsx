@@ -84,7 +84,7 @@ const TextImageContent = [
         still delivering a high-quality product.
       </>
     ),
-    image: "/assets/Mockup.jpg",
+    image: "/assets/brand1.jpg",
   },
   {
     title: (

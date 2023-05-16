@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 
 function Navigation() {
@@ -57,7 +56,7 @@ function Navigation() {
             active: activeHash === item.href.replaceAll("#", ""),
           })}
         >
-          <Link href={item.href}>{item.name}</Link>
+          <a href={item.href}>{item.name}</a>
         </li>
       ))}
     </ul>

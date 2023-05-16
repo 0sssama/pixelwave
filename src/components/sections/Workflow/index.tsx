@@ -46,7 +46,7 @@ const items: Omit<WorkflowItemProps, "id" | "control">[] = [
     subtitle: "Bring it to life...",
     description:
       "We will craft a responsive web app. Everything will be built with scaling in mind too (we'll make sure this is not just a proof of concept that you'll need to throw away later",
-    duration: "7-15 DAYS",
+    duration: "15-20 DAYS",
     image: "/assets/workflow_icons/Bubble-Dev-icon.svg",
   },
   {

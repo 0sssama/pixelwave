@@ -2,7 +2,6 @@ import { windowState } from "@/atoms/state";
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import classNames from "classnames";
 import Button from "@/components/atoms/Button";
 import { BiRightArrowAlt } from "react-icons/bi";
@@ -31,11 +30,11 @@ function Header() {
       }}
     >
       <div className="Header-wrapper wrapper flex items-center justify-between padding-x h-full">
-        <Link href="/" className="Header-Logo">
+        <a href="#" className="Header-Logo">
           <div>
             <img src="/assets/logo-horizontal.svg" alt="Pixelwave Logo" />
           </div>
-        </Link>
+        </a>
         <Navigation />
         <Button
           variant="header"

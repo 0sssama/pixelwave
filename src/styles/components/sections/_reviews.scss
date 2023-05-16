@@ -8,6 +8,7 @@
     row-gap: 10rem;
     flex-wrap: wrap;
     @include tablet {
+      align-items: flex-start;
       flex-direction: row;
     }
     margin-top: 6rem;

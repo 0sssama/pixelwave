@@ -24,16 +24,16 @@ function Portfolio() {
 
 const items: Omit<ProjectItemProps, "id" | "control">[] = [
   {
-    image: "/assets/projects/Travel-Website.png",
-    title: "Travel Website",
+    image: "/assets/projects/1337-companies.jpg",
+    title: "1337 Companies",
     description:
-      "A traveling landing page to book flights to different countries and cities.",
+      "Landing page for 1337 Companies, a dashboard that connects hiring companies with highly skilled graduate students from 1337 School.",
   },
   {
-    image: "/assets/projects/Smart-Insurance.png",
-    title: "Smart Insurance",
+    image: "/assets/projects/palais-shazam.jpg",
+    title: "Palais Shazam",
     description:
-      "Smart Insurance is an app  is designed to make finding medical professionals easy.",
+      "Captivating hotel landing page that showcases the hotel's amenities and services, along with a user-friendly booking dashboard.",
   },
   {
     image: "/assets/projects/Jewelry-Website.png",
@@ -42,10 +42,10 @@ const items: Omit<ProjectItemProps, "id" | "control">[] = [
       "Lovelvin is an eccomerce website, specialized in selling different types of jewelry.",
   },
   {
-    image: "/assets/projects/Personal-Banking.png",
-    title: "Personal Banking",
+    image: "/assets/projects/vision-unik.jpg",
+    title: "Vision Unik",
     description:
-      "Ausbang is a personal banking, where you can withdraw money, pay online and manage your fortune.",
+      "Intuitive website for a prominent French optician store franchise, featuring a comprehensive range of eyewear products.",
   },
 ];
 
