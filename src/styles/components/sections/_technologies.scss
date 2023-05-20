@@ -33,16 +33,16 @@
     column-gap: 5rem;
     row-gap: 3rem;
     img {
-      min-height: 1rem;
-      max-height: 1rem;
+      min-height: 1.5rem;
+      max-height: 1.5rem;
 
       @include tablet {
-        min-height: 1.25rem;
-        max-height: 1.25rem;
+        min-height: 2rem;
+        max-height: 2rem;
       }
       @include desktop {
-        min-height: 1.75rem;
-        max-height: 1.75rem;
+        min-height: 2.5rem;
+        max-height: 2.5rem;
       }
     }
   }
