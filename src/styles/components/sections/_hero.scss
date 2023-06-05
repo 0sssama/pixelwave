@@ -64,4 +64,49 @@
       column-gap: 1.5rem;
     }
   }
+  .ScrollDownLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    width: 100%;
+    margin-top: 1.5rem;
+
+    @include desktop {
+      margin-top: 2rem;
+    }
+    svg {
+      font-size: 1.5rem;
+      animation: scrollDownAnimation 1.5s ease-in-out infinite;
+      cursor: pointer;
+      margin-top: -0.5rem;
+    }
+    p {
+      font-size: 0.825rem;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+@keyframes scrollDownAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0.5rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
 }

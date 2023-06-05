@@ -3,6 +3,8 @@ import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 import { useInViewControl } from "@/utils/useInViewControl";
 import { motion } from "framer-motion";
+import Router from "next/router";
+import { FiChevronDown } from "react-icons/fi";
 
 function Hero() {
   const { ref, control } = useInViewControl();
@@ -51,6 +53,21 @@ function Hero() {
         </Button>
         <Button href="#portfolio">Our work</Button>
       </motion.div>
+      <ScrollDownLink />
+    </div>
+  );
+}
+
+function ScrollDownLink() {
+  return (
+    <div
+      className="ScrollDownLink"
+      onClick={() => {
+        Router.push("#about");
+      }}
+    >
+      <p>Learn more</p>
+      <FiChevronDown />
     </div>
   );
 }

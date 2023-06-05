@@ -19,6 +19,7 @@ function TextImage({ model }: TextImageProps = { model: 0 }) {
         reverse: model % 2 === 1,
       })}
       ref={ref}
+      id={model === 0 ? "about" : "more"}
     >
       <div className="text-container">
         <motion.h1
