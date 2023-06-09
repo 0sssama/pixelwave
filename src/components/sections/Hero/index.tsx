@@ -1,4 +1,5 @@
 import { Button } from "@/components/atoms";
+import { bookACallLink } from "@/utils/bookACallLink";
 import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 import { useInViewControl } from "@/utils/useInViewControl";
@@ -48,7 +49,7 @@ function Hero() {
           delay: 1.2,
         }}
       >
-        <Button variant="primary" href="https://google.com">
+        <Button variant="primary" href={bookACallLink}>
           Let&apos;s talk!
         </Button>
         <Button href="#portfolio">Our work</Button>

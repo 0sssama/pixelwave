@@ -1,4 +1,5 @@
 import { Button } from "@/components/atoms";
+import { bookACallLink } from "@/utils/bookACallLink";
 import { globalTransition } from "@/utils/globalTransition";
 import { globalVariant } from "@/utils/globalVariant";
 import { useInViewControl } from "@/utils/useInViewControl";
@@ -39,7 +40,7 @@ function Footer() {
         <Button
           variant="primary"
           icon={<BiRightArrowAlt />}
-          href="https://calendar.app.google/gp8qFyhxzKyUBjtB8"
+          href={bookACallLink}
         >
           Let&apos;s talk!
         </Button>

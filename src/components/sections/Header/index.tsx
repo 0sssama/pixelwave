@@ -7,6 +7,7 @@ import Button from "@/components/atoms/Button";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Navigation from "./Navigation";
 import { globalTransition } from "@/utils/globalTransition";
+import { bookACallLink } from "@/utils/bookACallLink";
 
 function Header() {
   const { scroll } = useRecoilValue(windowState);
@@ -39,7 +40,7 @@ function Header() {
         <Button
           variant="header"
           icon={<BiRightArrowAlt />}
-          href="https://calendar.app.google/gp8qFyhxzKyUBjtB8"
+          href={bookACallLink}
         >
           BOOK A CALL
         </Button>
