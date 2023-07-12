@@ -1,2 +1,1 @@
-export const bookACallLink =
-  "https://calendly.com/pixelwave-discovery/discovery-x-pixelwave";
+export const bookACallLink = "https://calendly.com/pixelwaveio/discovery";
